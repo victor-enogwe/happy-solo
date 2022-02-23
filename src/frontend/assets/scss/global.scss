@@ -1,0 +1,50 @@
+@use "sass:math";
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+// 2. Include any default variable overrides here
+@import 'variables';
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+
+// 4. Include any optional Bootstrap components as you like
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+// other bootstrap modules
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+// Helpers
+@import "~bootstrap/scss/helpers";
+// Utilities
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/utilities/api";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $primary_font;
+  margin: 0;
+  color: #999;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.tab-content {
+  height: calc(100vh - 40px);
+  background-color: #EEE;
+}
